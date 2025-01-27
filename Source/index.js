@@ -36,5 +36,23 @@ function buyWater(money) {
 
   console.log("You can buy " + action1 + " bottles of water");
 }
-
 buyWater(4);
+
+
+// Random Grade maker
+
+let score = Math.random() * 100;
+score = Math.floor(score) + 1  // 1 - 100
+
+if (score > 95 ){
+    alert("Your score is " + score + "% and You got A+ from this class")
+}else if( score > 85 && score < 95) {
+    alert("your score is " + score + "% and you got A from this class")
+}else if (score > 70 && score < 85){
+    alert("Your score is " + score + "% and you got B+ from this class")    
+    
+} else {
+        alert("Your score is " + score + "%")
+}
+
+
