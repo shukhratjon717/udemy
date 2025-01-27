@@ -55,4 +55,21 @@ if (score > 95 ){
         alert("Your score is " + score + "%")
 }
 
+// BMI calculator
+function bmiCalculator (weight, height) {
+  var bmi = weight / (height * 2);
+  
+  if (bmi <= 18.5) {
+      console.log("Your BMI" + bmi + "so you are underweight");
+  }
+  else if(bmi >18.5 && bmi <= 24.9) {
+      console.log("Your BMI is" + bmi + "you are a notmal weight")     
+  }
+  else {
+      console.log("Your BMI is " + bmi + "You are overweight")
+   }
+      
+  return interpretation;
+} 
+
 
