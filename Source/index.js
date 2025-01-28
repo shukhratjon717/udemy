@@ -38,38 +38,51 @@ function buyWater(money) {
 }
 buyWater(4);
 
-
 // Random Grade maker
 
 let score = Math.random() * 100;
-score = Math.floor(score) + 1  // 1 - 100
+score = Math.floor(score) + 1; // 1 - 100
 
-if (score > 95 ){
-    alert("Your score is " + score + "% and You got A+ from this class")
-}else if( score > 85 && score < 95) {
-    alert("your score is " + score + "% and you got A from this class")
-}else if (score > 70 && score < 85){
-    alert("Your score is " + score + "% and you got B+ from this class")    
-    
+if (score > 95) {
+  alert("Your score is " + score + "% and You got A+ from this class");
+} else if (score > 85 && score < 95) {
+  alert("your score is " + score + "% and you got A from this class");
+} else if (score > 70 && score < 85) {
+  alert("Your score is " + score + "% and you got B+ from this class");
 } else {
-        alert("Your score is " + score + "%")
+  alert("Your score is " + score + "%");
 }
 
 // BMI calculator
-function bmiCalculator (weight, height) {
+function bmiCalculator(weight, height) {
   var bmi = weight / (height * 2);
-  
+
   if (bmi <= 18.5) {
-      console.log("Your BMI" + bmi + "so you are underweight");
+    console.log("Your BMI" + bmi + "so you are underweight");
+  } else if (bmi > 18.5 && bmi <= 24.9) {
+    console.log("Your BMI is" + bmi + "you are a notmal weight");
+  } else {
+    console.log("Your BMI is " + bmi + "You are overweight");
   }
-  else if(bmi >18.5 && bmi <= 24.9) {
-      console.log("Your BMI is" + bmi + "you are a notmal weight")     
-  }
-  else {
-      console.log("Your BMI is " + bmi + "You are overweight")
-   }
-      
+
   return interpretation;
-} 
+}
+// Working with math elements
+let output = [];
+let count = 1;
 
+function fizzBuzz() {
+  if (count % 3 === 0 && count % 5 === 0) {
+    output.push("FizzBuzz");
+  } else if (count % 3 === 0) {
+    output.push("Fizz");
+  } else if (count % 5 === 0) {
+    output.push("Buzz");
+  } else {
+    output.push(count);
+  }
 
+  count++;
+
+  console.log(output);
+}
