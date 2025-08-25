@@ -111,48 +111,77 @@ while (numOfBottle >= 0) {
 }
 
 // leap year maker
-function isLeap(year){
-    if(year % 4 === 0){
-        if(year % 100 === 0){
-            if(year % 400 === 0){
-                
-            
-                return "Lear year";
-        }else {
-            return "Not leap year"
-        }
-    }else {
-        return "Leap year"
+function isLeap(year) {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        return "Lear year";
+      } else {
+        return "Not leap year";
+      }
+    } else {
+      return "Leap year";
     }
-    }else {
-        return "Not leap year"
-    }
+  } else {
+    return "Not leap year";
+  }
 }
 
 // ARRAYs
-let guestList = ['Steve', 'Jack', 'Mike', 'James', 'Jay', 'Ali']
+let guestList = ["Steve", "Jack", "Mike", "James", "Jay", "Ali"];
 
 let guestName = prompt("What is your  name?");
 
 if (guestList.includes(guestName)) {
-    alert("Welcome")
-}else {
-    alert("Sorry, maybe next time")
+  alert("Welcome");
+} else {
+  alert("Sorry, maybe next time");
 }
 // let output = [];
 let count = 1;
 function fizzBuzz() {
-    if(count % 3 === 0 && count % 5 ===0){
-        output.push("FizzBuzz")
-    } else if(count % 3 === 0){
-        output.push("Fizz")
-    } else if( count % 5 === 0){
-        output.push("Buzz")
-    } else{
-        output.push(count)
-    }
-    console.log(output)
-    count++
+  if (count % 3 === 0 && count % 5 === 0) {
+    output.push("FizzBuzz");
+  } else if (count % 3 === 0) {
+    output.push("Fizz");
+  } else if (count % 5 === 0) {
+    output.push("Buzz");
+  } else {
+    output.push(count);
+  }
+  console.log(output);
+  count++;
+}
+
+/// Who buys challnege
+
+function whoBuys(names){
+    let numPPL = names.length;
+    let personPostion = Math.floor(Math.random() * numPPL);
+
+    let randomPerson = names[personPostion];
+    return randomPerson + " is gonna buy lunch today!"
 }
 
 
+// While loop with Fizzbuzz
+
+// let output = [];
+// let count = 1;
+
+// function fizzBuzz() {
+//     while(count <= 100 ){
+      
+//   if (count % 3 === 0 && count % 5 === 0) {
+//     output.push("FizzBuzz");
+//   } else if (count % 3 === 0) {
+//     output.push("Fizz");
+//   } else if (count % 5 === 0) {
+//     output.push("Buzz");
+//   } else {
+//     output.push(count);
+//   }
+//   count++;
+//     }
+//   console.log(output)
+// }
