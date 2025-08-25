@@ -185,3 +185,18 @@ function whoBuys(names){
 //     }
 //   console.log(output)
 // }
+
+// while loop with decrement
+let numBottle = 99;
+while (numBottle >= 0){
+    let bottleWord = 'bottle';
+    if(numBottle === 1) {
+        bottleWord = "bottles"
+    }
+    console.log(numBottle + " " + bottleWord + " of coke on the wall");
+    console.log(numBottle + " " + bottleWord + " of beer");
+    console.log("Take one down, pass it around,");
+    numBottle--;
+    console.log(numBottle + " " + bottleWord + "of coke on the wall")
+    
+}
